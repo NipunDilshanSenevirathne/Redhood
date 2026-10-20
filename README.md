@@ -1,6 +1,6 @@
 # Redhood — complete user guide
 
-**By Nipun Dilshan Senevirathne · Skill version 1.0.0 · Guide updated 2026-10-20**
+**By Nipun Dilshan Senevirathne · 
 
 Redhood is a Claude Code skill for authorized company application security assessments and scoped bug bounty work. It helps Claude move from useful reconnaissance to application understanding, focused hypotheses, controlled tests, evidence review, reporting and retesting. It deliberately avoids Amass.
 
