@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "SIM-BETA",
+  "title": "Export confidentiality boundary - high",
+  "invariant": "Only current owning-tenant members may read private exports",
+  "scope_reference": "../context.md (offline simulation only)",
+  "owned_fixture": {
+    "id": "D72",
+    "owner_identity": "maya",
+    "authorization_reference": "../context.md"
+  },
+  "identities": [
+    {
+      "id": "maya",
+      "role": "owner",
+      "tenant": "tenant-red"
+    },
+    {
+      "id": "leo",
+      "role": "nonmember",
+      "tenant": "tenant-blue"
+    }
+  ],
+  "expected_behavior": "Leo receives no private export canary",
+  "observed_behavior": "Candidate claims private export access based on attached captures; review actual bodies",
+  "proposed_severity": "high",
+  "artifacts": {
+    "baseline": {
+      "path": "captures/baseline.txt",
+      "sha256": "a0ddcf7fa53a9fb8002e5918b317a9511fd621415519ca01d45be57c1262abf6",
+      "identity": "maya",
+      "observation": "See complete synthetic capture; no conclusion encoded here"
+    },
+    "control": {
+      "path": "captures/control.txt",
+      "sha256": "c7bb42d0c04f7aee48c58335c30377923659a27eeb67e5b817ad4c1abc8576a5",
+      "identity": "leo",
+      "observation": "See complete synthetic capture; no conclusion encoded here"
+    },
+    "test": {
+      "path": "captures/test.txt",
+      "sha256": "d7c3a003d6b43b2c6c062c7fb573e2401750a24aa4c6a5e884e63ba037dd4ce3",
+      "identity": "leo",
+      "observation": "See complete synthetic capture; no conclusion encoded here"
+    },
+    "repeat": {
+      "path": "captures/repeat.txt",
+      "sha256": "d7275b0a8931cbe5d8cef17a664a030933a45b3524e101fdab2ea626761f6144",
+      "identity": "leo",
+      "observation": "See complete synthetic capture; no conclusion encoded here"
+    }
+  }
+}

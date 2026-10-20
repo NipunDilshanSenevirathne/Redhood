@@ -1,0 +1,72 @@
+{
+  "name": "Redhood",
+  "by": "Nipun Dilshan Senevirathne",
+  "version": "1.0.0",
+  "created_date": "2026-10-20",
+  "timezone": "Asia/Colombo",
+  "previous_two_source_research": {
+    "created_date": "2026-10-20",
+    "timezone": "Asia/Colombo",
+    "codebygk_commit": "cb5d63cd158c4601978fee9687d65385853019b5",
+    "marco_commit": "b6c76d1437e08a0ef77b7fbed612791c71cc4aa5",
+    "user_zip_data_sha256": "fc32c25136f84875e63d85942e2d5f59332057498243d6906d501631d8557ac8",
+    "git_data_sha256": "a7953899a0b70f4cac6d8ce13d0c307c5844936777b030493182914dabd3b290",
+    "user_zip_and_git_records_semantically_equal": true,
+    "metadata_records": 10000,
+    "markdown_reports": 9999,
+    "overlapping_ids": 9552,
+    "unique_ids": 10447,
+    "codebygk_only": 448,
+    "marco_only": 447,
+    "original_critical_ids_covered": 913,
+    "markdown_body_presence_heuristic": {
+      "nonempty": 7577,
+      "empty_or_placeholder": 2422
+    },
+    "severity_labels": {
+      "unknown": 1602,
+      "high": 1834,
+      "medium": 3428,
+      "low": 2153,
+      "none": 473,
+      "critical": 957
+    },
+    "severity_disagreements_preserved": 22,
+    "selected_cases_inspected": 20,
+    "selected_with_body_or_summary": 18,
+    "selected_empty": 2,
+    "latest_codebygk_disclosure": "2024-10-13T09:32:06.766Z",
+    "latest_merged_disclosure": "2025-05-29T12:43:25.455Z"
+  },
+  "company_archive_sha256": "c43ea9245533ff8a25b787f7b7ef4bb8c11785a24e2eb3c39e5baf8209d1c6b3",
+  "company_csv_sha256": "5d9c43e2eefcfd5cded5eb69051008967138843ea1962cfeb7f10893d8f43b62",
+  "company_metadata_records": 14832,
+  "company_overlap_with_prior_union": 10231,
+  "company_added_ids": 4601,
+  "unique_ids": 15048,
+  "source_counts": {
+    "company-zip": 14832,
+    "codebygk": 10000,
+    "marco": 9999
+  },
+  "severity_labels": {
+    "unknown": 6203,
+    "high": 1834,
+    "medium": 3428,
+    "low": 2153,
+    "none": 473,
+    "critical": 957
+  },
+  "selected_cases_inspected": 20,
+  "selected_with_body_or_summary": 18,
+  "selected_empty": 2,
+  "test_cards": 42,
+  "cross_cutting_families": 15,
+  "audit_outer_files": 164,
+  "audit_python_ast_parsed": 45,
+  "model_training": false,
+  "all_report_bodies_semantically_reviewed": false,
+  "live_target_tests": "not_run",
+  "claude_runtime_benchmark": "not_run",
+  "validation_results": "See VALIDATION.md and data/validation-results.json"
+}

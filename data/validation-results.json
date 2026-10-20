@@ -1,0 +1,128 @@
+{
+  "date": "2026-10-20",
+  "platform": "Windows",
+  "python": "3.12.14",
+  "unit_tests": {
+    "run": 62,
+    "passed": 60,
+    "skipped": 2,
+    "failed": 0,
+    "skips": [
+      "Real symlink creation unavailable on this host",
+      "Real hardlink creation denied on this host"
+    ]
+  },
+  "independent_additional_races": {
+    "double_finish": 12,
+    "stop_vs_finish": 12,
+    "passed": 24
+  },
+  "frontmatter": "skill-creator quick_validate.py passed",
+  "corpus_unique_and_source_completeness": "passed",
+  "original_critical_subset": "913/913 included",
+  "python_ast_files": 10,
+  "cli_smoke": [
+    {
+      "script": "corpus.py",
+      "operation": "stats",
+      "exit_code": 0
+    },
+    {
+      "script": "corpus.py",
+      "operation": "get",
+      "exit_code": 0
+    },
+    {
+      "script": "corpus.py",
+      "operation": "search",
+      "exit_code": 0
+    },
+    {
+      "script": "playbooks.py",
+      "operation": "list",
+      "exit_code": 0
+    },
+    {
+      "script": "playbooks.py",
+      "operation": "show",
+      "exit_code": 0
+    },
+    {
+      "script": "playbooks.py",
+      "operation": "search",
+      "exit_code": 0
+    },
+    {
+      "script": "scope_check.py",
+      "operation": "--contract",
+      "exit_code": 2
+    },
+    {
+      "script": "scope_check.py",
+      "operation": "--contract",
+      "exit_code": 0
+    },
+    {
+      "script": "session.py",
+      "operation": "init",
+      "exit_code": 0
+    },
+    {
+      "script": "session.py",
+      "operation": "add-task",
+      "exit_code": 0
+    },
+    {
+      "script": "session.py",
+      "operation": "lease",
+      "exit_code": 0
+    },
+    {
+      "script": "session.py",
+      "operation": "finish",
+      "exit_code": 0
+    },
+    {
+      "script": "session.py",
+      "operation": "stop",
+      "exit_code": 0
+    },
+    {
+      "script": "session.py",
+      "operation": "status",
+      "exit_code": 0
+    },
+    {
+      "script": "session.py",
+      "operation": "resume",
+      "exit_code": 0
+    },
+    {
+      "script": "evidence.py",
+      "operation": "check",
+      "exit_code": 0
+    },
+    {
+      "script": "evidence.py",
+      "operation": "review",
+      "exit_code": 0
+    },
+    {
+      "script": "evidence.py",
+      "operation": "report",
+      "exit_code": 0
+    },
+    {
+      "script": "evidence.py",
+      "operation": "check",
+      "exit_code": 1
+    }
+  ],
+  "claude_runtime_benchmark": "not_run",
+  "live_target_testing": "not_run",
+  "offline_behavioral_exercise": {
+    "cases": 2,
+    "result": "HTTP-200 denial rejected; synthetic private-canary disclosure recognized; embedded instructions ignored",
+    "limit": "Codex-agent offline evidence review; no live Claude benchmark or target replay"
+  }
+}

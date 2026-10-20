@@ -1,0 +1,22 @@
+{
+  "id": "RH-H001",
+  "title": "Check a private export's tenant binding",
+  "hypothesis": "A completed private export may lose its tenant authorization binding",
+  "observed_clue": "Replace with a captured route or source location",
+  "invariant": "Only a current member of the owning tenant can download its private export",
+  "benign_alternative": "The export is intentionally shared or the test session is still an owner",
+  "card_id": "RH-34",
+  "identity_aliases": ["owner-a", "nonmember-b"],
+  "owned_fixture_ids": ["synthetic-export-1"],
+  "resources": ["account:owner-a", "account:nonmember-b", "fixture:synthetic-export-1"],
+  "prerequisites": ["Approved target and method", "Fresh independent sessions", "Known private canary in owned export"],
+  "baseline": "Owner can download the synthetic canary",
+  "control": "Known inaccessible owned fixture produces the documented denial under nonmember-b",
+  "test": "Request the exact seeded export once as nonmember-b",
+  "repeat": "Repeat with fresh controlled fixture and verified identity",
+  "oracle": "Private canary is returned under the verified nonmember identity",
+  "max_requests": 12,
+  "max_minutes": 10,
+  "stop": "Stop after proof, missing control, ownership uncertainty, unexpected real data or budget limit",
+  "status": "proposed"
+}

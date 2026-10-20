@@ -1,0 +1,25 @@
+{
+  "engagement": "example-company-assessment",
+  "authorization_reference": "Replace with the company approval or program policy and date",
+  "authorization_confirmed": false,
+  "allowed": [
+    {"host": "app.example.test", "schemes": ["https"], "ports": [443], "path_prefixes": ["/"]},
+    {"host": "*.api.example.test", "schemes": ["https"], "ports": [443], "path_prefixes": ["/v1"]}
+  ],
+  "excluded_hosts": ["payments.example.test"],
+  "excluded_paths": [{"host": "app.example.test", "prefixes": ["/logout", "/delete-account"]}],
+  "methods": ["GET", "HEAD"],
+  "accounts": [],
+  "controlled_callback_origins": [],
+  "window": "Record the approved window and timezone",
+  "global_requests_per_second": 2,
+  "per_host_requests_per_second": 1,
+  "max_total_requests": 500,
+  "max_concurrent_requests": 2,
+  "session_max_workers": 2,
+  "session_max_lease_seconds": 300,
+  "approved_state_changes": [],
+  "explicit_method_permissions": [],
+  "stop_conditions": ["429: stop and honor Retry-After", "new server instability", "unexpected real-user data", "scope ambiguity"],
+  "cleanup_owner": "Record who cleans up the synthetic test objects"
+}

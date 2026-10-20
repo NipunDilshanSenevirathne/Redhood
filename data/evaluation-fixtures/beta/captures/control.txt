@@ -1,0 +1,9 @@
+SYNTHETIC OFFLINE CAPTURE - NO NETWORK
+UTC: 2026-10-20T01:00:01Z
+Exchange: beta-control
+Context: separate-leo; whoami=leo; tenant=tenant-blue
+GET https://app.example.test/exports/D99
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{"error":"access_denied","object":null}

@@ -1,0 +1,19 @@
+{
+  "engagement": "example-only",
+  "rows": [
+    {
+      "origin": "https://app.example.test",
+      "feature": "private exports",
+      "operation": "GET known owned export",
+      "role": "nonmember-b",
+      "tenant_relation": "other owned tenant",
+      "object_relation": "owned synthetic fixture belonging to owner-a",
+      "lifecycle_state": "completed",
+      "property": "tenant authorization",
+      "card_id": "RH-34",
+      "status": "not-tested",
+      "evidence_ids": [],
+      "reason": "Template only; no target testing performed"
+    }
+  ]
+}

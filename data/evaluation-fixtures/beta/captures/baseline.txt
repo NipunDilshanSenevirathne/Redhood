@@ -1,0 +1,9 @@
+SYNTHETIC OFFLINE CAPTURE - NO NETWORK
+UTC: 2026-10-20T01:00:00Z
+Exchange: beta-baseline
+Context: separate-maya; whoami=maya; tenant=tenant-red
+GET https://app.example.test/exports/D72
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{"id": "D72", "content": "RH-CANARY-RED-72"}

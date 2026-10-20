@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "CASE-001",
+  "title": "Replace with the demonstrated boundary violation",
+  "invariant": "Only an active member of the owning tenant can download its private export",
+  "scope_reference": "contract.json; replace with its fingerprint and applicable approval",
+  "owned_fixture": {
+    "id": "synthetic-export-1",
+    "owner_identity": "owner-a",
+    "authorization_reference": "fixtures.json; record known ownership and setup"
+  },
+  "identities": [
+    {"id": "owner-a", "role": "owner", "tenant": "owned-tenant-a"},
+    {"id": "nonmember-b", "role": "nonmember", "tenant": "owned-tenant-b"}
+  ],
+  "expected_behavior": "The nonmember receives a denial and no private canary",
+  "observed_behavior": "Not tested; this is an incomplete schema example",
+  "proposed_severity": "unrated",
+  "artifacts": {
+    "baseline": {"path": "", "sha256": "", "identity": "owner-a", "observation": ""},
+    "control": {"path": "", "sha256": "", "identity": "nonmember-b", "observation": ""},
+    "test": {"path": "", "sha256": "", "identity": "nonmember-b", "observation": ""},
+    "repeat": {"path": "", "sha256": "", "identity": "nonmember-b", "observation": ""}
+  },
+  "demonstrated_impact": "Not established",
+  "reproduction_steps": [],
+  "alternative_explanations": [],
+  "remediation": "Not established",
+  "cleanup": "No actions performed"
+}
